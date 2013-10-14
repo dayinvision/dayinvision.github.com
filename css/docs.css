@@ -1,0 +1,63 @@
+#banner {
+	border-bottom: 0;
+}
+
+#banner .menu {
+	margin-top: 60px;
+	font-size: 18px;
+	padding-bottom: 1px;
+}
+
+#banner .menu li {
+	width: 30%;
+
+}
+
+#banner .menu li a {
+	width: 100%;
+	display: inline-block;
+	color: #000;
+}
+
+#banner .menu li a:hover {
+	text-decoration: none;
+}
+
+#banner .menu .on span {
+	color: red;
+}
+
+#cate-bar {
+	display: inline-block;
+	height: 3px;
+	background: red;
+	position: absolute;
+	top: 100%;
+	left: 20px;
+	width: 45px;
+	overflow: hidden;
+}
+
+#articles li {
+	margin: 7px 0;
+	cursor: pointer;
+}
+
+#articles li img {
+	width: 350px;
+	height: 233px;
+	box-shadow: #999 1px 1px 4px;
+}
+
+#articles .cover {
+	background: #000;
+	opacity: .7;
+	filter: alpha(opacity=70);
+	width: 350px;
+	height: 0px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	line-height: 0px;
+	position: absolute;
+}
