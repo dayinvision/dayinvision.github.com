@@ -3,7 +3,7 @@ layout: home
 ---
 <ul class="list-inline" id="articles">
 	{% for article in site.categories.article %}
-	<li data-date="{{ article.date | date_to_string }}">
+	<li data-date="{{ article.date | date_to_string }}" data-url="{{ article.url }}">
 		<div class="cover"></div>
 		<img src="/img/articles/{{ article.date | date: "%Y-%m-%d"}}/cover.jpg">
 	</li>
@@ -16,5 +16,9 @@ $(document).ready(function(){
     }).mouseleave(function(){
         $(this).children(".cover").stop().animate({height: "0px", "line-height": "0px"}, 300).text("");
     });
+
+    $("#articles li").click(function(){
+    	location.href = $(this).attr("data-url");
+    })
 })
 </script>
