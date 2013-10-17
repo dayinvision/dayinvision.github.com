@@ -5,8 +5,7 @@ layout:	default
 	<div class="page-header" id="banner">
 		<div class="row">
       <div class="col-sm-3">
-        <h1>大印</h1>
-        <p class="lead">dayin vision</p>
+        <h1>大印<br><span class="logo">视觉</span></h1>
       </div>
       <div class="col-sm-9 menu">
 				<ul class="list-inline">
@@ -19,6 +18,9 @@ layout:	default
     </div>
 	</div>
 	{{ content }}
+</div>
+<div id="to-top">
+	<span class="glyphicon glyphicon-arrow-up"></span>
 </div>
 <script>
 $(document).ready(function(){
@@ -34,6 +36,11 @@ $(document).ready(function(){
         animateBar($(this));
     }).mouseleave(function(){
         animateBar($('.menu .on'));
-    });
+    })
+
+    $("#to-top").click(function(){
+    		$('html, body').animate({scrollTop: 0});
+
+    })
 })
 </script>

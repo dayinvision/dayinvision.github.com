@@ -1,12 +1,45 @@
 ---
 layout:	home
 ---
-<h4>{{ page.date | date: "%b %d %Y"}} {{ page.title }}</h4>
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" style="float: right" class="bdshare_t bds_tools_24 get-codes-bdshare">
+	<a class="bds_tsina"></a>
+	<a class="bds_qzone"></a>
+	<a class="bds_renren"></a>
+	<a class="bds_douban"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=212104" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+<h4>{{ page.title }} @ {{ page.date | date_to_string }}</h4>
 <hr>
-
+<div class="article-list">
+	{% for i in (1..page.counter) %}
+		<a href="/img/articles/{{ page.date | date: "%Y-%m-%d"}}/{{i}}.jpg" data-lightbox="roadtrip">
+			<img src="/img/articles/{{ page.date | date: "%Y-%m-%d"}}/{{i}}.jpg" />
+		</a>
+	{% endfor %}
+</div>
 <address>
   <strong>联系方式</strong><br>
   Phone: 13772525129<br>
   QQ: <a title="76839106" href="http://wpa.qq.com/msgrd?v=3&amp;uin=76839106" target="_blank">76839106</a><br>
   Weibo: <a title="大印VISION" target="_blank" href="http://weibo.com/chendayinyin">大印VISION</a><br>
 </address>
+<!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"dayinvision"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = 'http://static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	|| document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+<!-- Duoshuo Comment END -->

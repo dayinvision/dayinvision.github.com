@@ -1,3 +1,7 @@
+.logo {
+	color: #aaa;
+}
+
 #banner {
 	border-bottom: 0;
 }
@@ -96,4 +100,36 @@
 .package-cont {
 	margin-top: 30px;
 	font-size: 15px;
+}
+
+.article-list {
+	text-align: center;
+	padding: 0px 10px;
+}
+
+.article-list img {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+#to-top {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	width: 40px;
+	height: 40px;
+	padding-right: 2px;
+	line-height: 35px;
+	border: 1px solid #ccc;
+	border-radius: 40px;
+	font-size: 24px;
+	color: #666;
+	text-align: center;
+	cursor: pointer;
+	background: #fff;
+}
+
+#to-top:hover {
+	color: #444;
+	border: 1px solid #999;
 }
