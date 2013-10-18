@@ -110,6 +110,7 @@
 .article-list img {
 	max-width: 100%;
 	margin-bottom: 20px;
+	box-shadow: #999 1px 1px 4px;
 }
 
 #to-top {
@@ -132,4 +133,17 @@
 #to-top:hover {
 	color: #444;
 	border: 1px solid #999;
+}
+
+.mock-img {
+	background: #f9f9f9;
+	margin-bottom: 20px;
+	height: 640px;
+}
+
+.mock-img img {
+	cursor: pointer;
+	background: url('../img/img-loading.gif') no-repeat center center scroll;
+	height: 640px;
+	width: 100%;
 }

@@ -19,7 +19,9 @@ document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static
 <div class="article-list">
 	{% for i in (1..page.counter) %}
 		<a href="/img/articles/{{ page.date | date: "%Y-%m-%d"}}/{{i}}.jpg" data-lightbox="roadtrip">
-			<img src="/img/articles/{{ page.date | date: "%Y-%m-%d"}}/{{i}}.jpg" />
+			<div class="mock-img">
+				<img src="" />
+			</div>
 		</a>
 	{% endfor %}
 </div>
@@ -42,4 +44,13 @@ var duoshuoQuery = {short_name:"dayinvision"};
 	|| document.getElementsByTagName('body')[0]).appendChild(ds);
 })();
 </script>
+<style>
+	#ds-thread #ds-reset .ds-powered-by a,
+	#ds-thread #ds-reset .ds-powered-by a:hover{color:#fff; cursor: default;}
+</style>
 <!-- Duoshuo Comment END -->
+<script>
+$(document).ready(function(){
+		var counter = {{ page.counter }};
+})
+</script>
