@@ -41,6 +41,10 @@
 	overflow: hidden;
 }
 
+#articles {
+	margin-bottom: 50px;
+}
+
 #articles li {
 	margin: 7px 0;
 	cursor: pointer;
