@@ -51,6 +51,13 @@ var duoshuoQuery = {short_name:"dayinvision"};
 <!-- Duoshuo Comment END -->
 <script>
 $(document).ready(function(){
-		var counter = {{ page.counter }};
+		var loadImg = function(i, counter){
+				if(i < counter) {
+						$(".article-list img").eq(i++).attr("src", "/img/articles/{{ page.date | date: "%Y-%m-%d"}}/" + (i + 1) + ".jpg").css({"width": "100%", "height": "auto"}).load(function(){
+								loadImg(i, counter);
+						});
+				}
+		}
+		loadImg(0, {{ page.counter }});
 })
 </script>

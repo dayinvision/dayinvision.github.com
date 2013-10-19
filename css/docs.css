@@ -109,7 +109,6 @@
 
 .article-list img {
 	max-width: 100%;
-	margin-bottom: 20px;
 	box-shadow: #999 1px 1px 4px;
 }
 
@@ -138,7 +137,6 @@
 .mock-img {
 	background: #f9f9f9;
 	margin-bottom: 20px;
-	height: 640px;
 }
 
 .mock-img img {
