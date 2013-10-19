@@ -53,7 +53,7 @@ var duoshuoQuery = {short_name:"dayinvision"};
 $(document).ready(function(){
 		var loadImg = function(i, counter){
 				if(i < counter) {
-						$(".article-list img").eq(i++).attr("src", "/img/articles/{{ page.date | date: "%Y-%m-%d"}}/" + (i + 1) + ".jpg").css({"width": "100%", "height": "auto"}).load(function(){
+						$(".article-list img").eq(i++).attr("src", "/img/articles/{{ page.date | date: "%Y-%m-%d"}}/" + i + ".jpg").css({"width": "100%", "height": "auto"}).load(function(){
 								loadImg(i, counter);
 						});
 				}
