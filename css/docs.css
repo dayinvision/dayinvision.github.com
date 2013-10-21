@@ -139,11 +139,11 @@ ul.blogs li {
 }
 
 .package .aside {
-	background-image: url('../img/package.jpeg');
+	background-image: url('http://chendayin-blog.stor.sinaapp.com/img/package.jpeg');
 }
 
 .blog .aside {
-	background-image: url('../img/blog.jpeg');
+	background-image: url('http://chendayin-blog.stor.sinaapp.com/img/blog.jpeg');
 }
 
 .package-cont {
