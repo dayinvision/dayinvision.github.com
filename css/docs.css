@@ -12,6 +12,11 @@
 	padding-bottom: 1px;
 }
 
+.footer {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
 .menu li {
 	width: 30%;
 
