@@ -17,6 +17,10 @@
 	text-align: center;
 }
 
+.footer div {
+	margin-bottom: 10px;
+}
+
 .menu li {
 	width: 30%;
 
