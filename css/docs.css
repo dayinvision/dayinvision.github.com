@@ -96,6 +96,10 @@
 	background-position: 50% 50%;
 }
 
+.frist-content {
+	display: none;	
+}
+
 .blog,
 .package {
 	font-size: 18px;
