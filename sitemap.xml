@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://dayinvision.com/</loc>
-		<lastmod>2013-11-06</lastmod>
+		<lastmod>2014-01-03</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
+		<priority>1</priority>
 	</url>
 	<url>
-		<loc>http://dayinvision.com/package/</loc>
+		<loc>http://dayinvision.com/price/</loc>
 		<lastmod>2013-11-06</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
